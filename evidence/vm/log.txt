@@ -1,0 +1,2 @@
+SpecPaste cli exit=
+SpecPaste gui alive=True

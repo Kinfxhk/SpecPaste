@@ -7,7 +7,7 @@ A one-page PC summary you can paste into a forum — a lightweight replacement f
 - Collects via WMI: OS (caption, version, build + UBR, architecture), CPU (name, cores, logical processors, max clock), memory (total, per-module capacity/speed/manufacturer/part number, slots used/total), motherboard (manufacturer, product, BIOS vendor/version/date), GPU (name, driver version, adapter RAM, resolution, refresh rate), disks (model, size, SSD/HDD, bus type) + volumes (letter, filesystem, size, free), and up network adapters (name, link speed).
 - Output as plain text, Markdown or BBCode (for forums like HKEPC).
 - Single-window GUI with 重新整理 / 複製純文字 / 複製 Markdown / 複製 BBCode / 儲存為 .txt.
-- CLI: `SpecPaste.exe --text|--markdown|--bbcode` prints to stdout and exits.
+- CLI: `SpecPaste.exe --text|--markdown|--bbcode` prints to stdout and exits. In PowerShell pipe it (`SpecPaste.exe --markdown | Out-File specs.md`); `>` works in cmd.
 
 ## Install
 
@@ -40,7 +40,7 @@ MIT — see LICENSE.
 - 透過 WMI 收集：作業系統（名稱、版本、組建＋UBR、架構）、處理器（名稱、核心、邏輯處理器、最大時脈）、記憶體（總容量、每條模組容量／時脈／廠商／料號、已用／總插槽）、主機板（製造商、型號、BIOS 廠商／版本／日期）、顯示卡（名稱、驅動程式版本、記憶體、解析度、更新頻率）、磁碟（型號、容量、SSD/HDD、匯流排類型）＋磁碟區（代號、檔案系統、容量、可用）、以及已連線的網絡介面卡（名稱、連線速度）。
 - 輸出純文字、Markdown 或 BBCode（適用 HKEPC 等討論區）。
 - 單視窗圖形介面，含「重新整理／複製純文字／複製 Markdown／複製 BBCode／儲存為 .txt」。
-- 命令列：`SpecPaste.exe --text|--markdown|--bbcode` 輸出到 stdout 後結束。
+- 命令列：`SpecPaste.exe --text|--markdown|--bbcode` 輸出到 stdout 後結束。PowerShell 請用管線（`SpecPaste.exe --markdown | Out-File specs.md`）；cmd 可直接用 `>`。
 
 ## 安裝
 

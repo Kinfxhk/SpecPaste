@@ -64,7 +64,7 @@ public static class Formatter
             for (var n = 0; n < mem.Modules.Count; n++)
             {
                 var m = mem.Modules[n];
-                var parts = new[] { FormatBytes(m.CapacityBytes), $"{m.SpeedMhz} MHz", m.Manufacturer, m.PartNumber }
+                var parts = new[] { FormatBytes(m.CapacityBytes), m.SpeedMhz > 0 ? $"{m.SpeedMhz} MHz" : "", m.Manufacturer, m.PartNumber }
                     .Where(p => p.Length > 0);
                 Row($"模組 {n + 1}", string.Join(", ", parts));
             }

@@ -42,3 +42,8 @@ Evidence: `evidence/this-pc.md` (Markdown output for this PC) and `evidence/gui.
 - Requires .NET 10 Desktop Runtime on the target machine (framework-dependent).
 - Integrated GPU with no attached display reports 解析度 0 × 0 @ 0 Hz — correct WMI result, not a bug.
 - CLI stdout is UTF-8; on a legacy cmd with a non-UTF8 codepage the Chinese text may render garbled (file redirect is always UTF-8).
+
+
+## Reviewer verification (it-dog)
+
+- KinTest VM (release zip only): GUI showed every section populated (VMware hardware); `--markdown` to a file works from cmd and via `| Out-File` in PowerShell (PowerShell `>` from a GUI-subsystem exe gives an empty file; README says so). Memory speed 0 MHz is now hidden. Evidence: `evidence/vm/`.
