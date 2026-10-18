@@ -114,7 +114,7 @@ public sealed class Collector
         try
         {
             var list = new List<NetworkAdapterInfo>();
-            foreach (var o in Query("SELECT Name, NetConnectionID, Speed, NetConnectionStatus FROM Win32_NetworkAdapter WHERE NetConnectionStatus = 2"))
+            foreach (var o in Query("SELECT Name, NetConnectionID, Speed, NetConnectionStatus FROM Win32_NetworkAdapter WHERE NetConnectionStatus = 2 AND (PNPDeviceID LIKE 'PCI%' OR PNPDeviceID LIKE 'USB%')"))
             {
                 var name = S(o, "NetConnectionID");
                 if (name.Length == 0) name = S(o, "Name");

@@ -89,7 +89,7 @@ public static class Formatter
             Row("名稱", g.Name);
             Row("驅動程式", g.DriverVersion);
             Row("記憶體", FormatBytes(g.MemoryBytes));
-            Row("解析度", $"{g.ResolutionWidth} × {g.ResolutionHeight} @ {g.RefreshRateHz} Hz");
+            if (g.ResolutionWidth > 0) Row("解析度", $"{g.ResolutionWidth} × {g.ResolutionHeight} @ {g.RefreshRateHz} Hz");
             Plain("");
         }
 

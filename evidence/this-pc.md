@@ -28,7 +28,6 @@
 - **名稱**: Intel(R) Graphics
 - **驅動程式**: 32.0.101.8860
 - **記憶體**: 2 GB
-- **解析度**: 0 × 0 @ 0 Hz
 
 ## 儲存裝置
 磁碟
@@ -38,6 +37,3 @@
 - **C: (NTFS)**: 1.82 TB（可用 1.41 TB）
 ## 網絡
 - **乙太網路 2**: 2.5 Gbps
-- **Tailscale**: 100 Gbps
-- **VMware Network Adapter VMnet1**: 100 Mbps
-- **VMware Network Adapter VMnet8**: 100 Mbps
